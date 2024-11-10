@@ -1,89 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam McGlin's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Main Content Container -->
-    <div class="container">
-        
-        <!-- Navigation Menu inside container but styled to float above -->
-        <nav>
-            <a href="#about">About Me</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#achievements">Achievements</a> |
-            <a href="#contact">Contact</a>
-        </nav>
+/* Main Content Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 10px;
+}
 
-        <!-- Main Heading -->
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! This is my portfolio site hosted on GitHub Pages.</p>
+/* Header Styling */
+h1, h2 {
+    color: #4CAF50;
+    text-align: center;
+}
 
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a passionate student majoring in Applied Mathematics and Computer Science at the University of Wisconsin Stout. I enjoy working on innovative projects, especially in robotics and software development. I aim to use my technical skills to solve real-world problems and contribute to impactful projects.
-            </p>
-        </section>
+h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: C++, Java, JavaScript, HTML, CSS, Python, PHP</li>
-                <li>Development Tools: Visual Studio, Eclipse, GitHub</li>
-                <li>Technical Skills: Computer Hardware, Technical Support, Software Troubleshooting, Low-Level Network Management</li>
-                <li>Soft Skills: Customer Service, Customer Satisfaction</li>
-            </ul>
-        </section>
+/* Navigation Styling */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Title</h3>
-                <img src="project-image.jpg" alt="Screenshot of project" style="width:100%; max-width:300px;">
-                <p>Brief description of the project, what it does, and any technologies you used.</p>
-                <a href="https://github.com/adam1098765432/project-repo" target="_blank">View on GitHub</a>
-            </div>
-        </section>
+nav a {
+    color: #4CAF50;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        <!-- Achievements Section -->
-        <section id="achievements">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Dean’s List – University of Wisconsin Stout (2023)</li>
-                <li>National Honors Society Member</li>
-                <li>Spanish National Honors Society Member</li>
-                <li>Robotics Competition – Built a competition-ready robot for VexU</li>
-            </ul>
-        </section>
+nav a:hover {
+    text-decoration: underline;
+}
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:adammcglin@gmail.com">adammcglin@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/adam-mcglin-45a91b329/" target="_blank">My LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/adam1098765432" target="_blank">github.com/adam1098765432</a></p>
-        </section>
+/* Section Styling */
+#about p, #skills ul, #achievements ul, #contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
 
-        <!-- Download Resume Link -->
-        <p>
-            <a href="resume1.pdf" download>Download My Resume</a>
-        </p>
+/* Skills and Achievements List */
+#skills ul, #achievements ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
 
-    </div>
+#skills li, #achievements li {
+    margin: 8px 0;
+}
 
-    <!-- Footer outside the main content container -->
-    <footer>
-        <p>&copy; 2024 Adam McGlin | <a href="https://github.com/adam1098765432" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/adam-mcglin-45a91b329/" target="_blank">LinkedIn</a></p>
-    </footer>
+/* Project Section Styling */
+#projects .project {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
 
-</body>
-</html>
+.project img {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Download Resume Link */
+a {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    position: relative;
+    bottom: 0;
+}
