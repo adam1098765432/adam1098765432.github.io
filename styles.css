@@ -1,3 +1,4 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -30,14 +31,38 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Download Resume Link */
-a {
+/* Navigation Styling */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
     color: #4CAF50;
+    margin: 0 15px;
+    text-decoration: none;
     font-weight: bold;
 }
 
-a:hover {
+nav a:hover {
     text-decoration: underline;
+}
+
+/* Section Styling */
+#about p, #skills ul, #achievements ul, #contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Skills and Achievements List */
+#skills ul, #achievements ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#skills li, #achievements li {
+    margin: 8px 0;
 }
 
 /* Project Section Styling */
@@ -54,12 +79,17 @@ a:hover {
     border-radius: 5px;
 }
 
-/* Contact Section Styling */
-#contact p {
-    margin: 10px 0;
+/* Download Resume Link */
+a {
+    color: #4CAF50;
+    font-weight: bold;
 }
 
-/* Footer Spacing */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
