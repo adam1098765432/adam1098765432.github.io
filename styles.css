@@ -3,19 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns content at the top of the page */
+    min-height: 100vh; /* Ensures the body covers the full height of the viewport */
+    background-color: #121212; /* Dark mode default */
+    color: #ffffff; /* Dark mode text color */
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Light Mode Styles */
 body.light-mode {
     background-color: #f4f4f4;
     color: #333;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
 }
 
 /* Main Content Container */
@@ -25,7 +24,6 @@ body.dark-mode {
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -85,6 +83,7 @@ button#dark-mode-toggle:hover {
 
 /* Footer Styling */
 footer {
+    width: 100%;
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
