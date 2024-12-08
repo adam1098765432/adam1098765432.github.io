@@ -1,25 +1,21 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Align to the top of the page */
-    min-height: 100vh; /* Full viewport height */
-    background-color: #121212; /* Dark mode default */
-    color: #ffffff;
+    margin: 0;
+    padding: 0;
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Light Mode Styles */
 body.light-mode {
     background-color: #f4f4f4;
     color: #333;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 
 /* Main Content Container */
@@ -29,13 +25,13 @@ body.light-mode {
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode .container {
     background-color: #1e1e1e;
-    color: #ffffff;
 }
 
 /* Header Styling */
@@ -89,7 +85,6 @@ button#dark-mode-toggle:hover {
 
 /* Footer Styling */
 footer {
-    width: 100%;
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
