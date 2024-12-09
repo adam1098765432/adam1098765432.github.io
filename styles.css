@@ -19,7 +19,7 @@ body {
 
 body.light-mode {
     background-color: #f4f4f4;
-    color: #333;
+    color: #333333; /* Fixed text color for light mode */
 }
 
 /* Main Content Container */
@@ -35,6 +35,12 @@ body.light-mode {
 
 body.dark-mode .container {
     background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.light-mode .container {
+    background-color: #ffffff;
+    color: #333333;
 }
 
 /* Navigation Styling */
@@ -102,12 +108,17 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
-    margin-top: auto;
     background-color: #f9f9f9;
     transition: background-color 0.3s, color 0.3s;
+    margin-top: auto;
 }
 
 body.dark-mode footer {
     background-color: #333333;
     color: #aaaaaa;
+}
+
+body.light-mode footer {
+    background-color: #f4f4f4;
+    color: #333333;
 }
