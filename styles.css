@@ -77,11 +77,11 @@ nav a:hover {
 }
 
 body.dark-mode nav a {
-    color: #66B2FF; /* Lighter green for better readability in dark mode */
+    color: #66B2FF; /* Lighter blue for better readability in dark mode */
 }
 
 body.dark-mode nav a:hover {
-    color: #99CCFF; /* Even lighter green on hover for better contrast */
+    color: #99CCFF; /* Even lighter blue on hover for better contrast */
 }
 
 button#dark-mode-toggle {
