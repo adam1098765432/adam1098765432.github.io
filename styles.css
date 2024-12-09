@@ -9,13 +9,13 @@
 body {
     font-family: Arial, sans-serif;
     display: flex; /* Enables Flexbox for centering */
-    justify-content: center; /* Center content horizontally */
-    align-items: flex-start; /* Align content at the top of the page */
+    justify-content: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns content at the top */
     min-height: 100vh; /* Full viewport height */
     background-color: #121212; /* Dark mode default */
-    color: #ffffff; /* Default text color */
+    color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
-    padding: 20px; /* Prevents content from hugging the screen edges */
+    padding: 20px;
 }
 
 body.light-mode {
@@ -32,19 +32,19 @@ body.light-mode {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto; /* Centers the container horizontally */
 }
 
 body.dark-mode .container {
     background-color: #1e1e1e;
-    color: #ffffff;
 }
 
-/* Navigation Styling */
+/* Header and Navigation */
 nav {
-    display: flex; /* Make nav a Flexbox */
-    justify-content: space-between; /* Space out links and toggle */
-    align-items: center; /* Align items vertically */
+    display: flex; /* Flexbox for aligning links and button */
+    justify-content: center; /* Center all content */
+    align-items: center; /* Vertically align items */
+    gap: 15px; /* Adds spacing between links and the button */
     margin-bottom: 20px;
     padding: 10px 0;
     background-color: #f9f9f9;
@@ -59,7 +59,6 @@ body.dark-mode nav {
 
 nav a {
     color: #4CAF50;
-    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -101,7 +100,7 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
-    margin-top: auto; /* Push footer to the bottom */
+    margin-top: 20px;
     background-color: #f9f9f9;
     transition: background-color 0.3s, color 0.3s;
 }
