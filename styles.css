@@ -62,6 +62,11 @@ body.dark-mode nav {
 }
 
 nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.light-mode nav a {
     color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
