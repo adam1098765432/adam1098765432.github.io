@@ -9,13 +9,13 @@
 body {
     font-family: Arial, sans-serif;
     display: flex; /* Enables Flexbox for centering */
-    justify-content: center; /* Centers content horizontally */
-    align-items: flex-start; /* Aligns content at the top */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align at the top */
     min-height: 100vh; /* Full viewport height */
     background-color: #121212; /* Dark mode default */
-    color: #ffffff;
+    color: #ffffff; /* Default text color */
     transition: background-color 0.3s, color 0.3s;
-    padding: 20px;
+    padding: 20px; /* Prevents content from hugging screen edges */
 }
 
 body.light-mode {
@@ -32,23 +32,36 @@ body.light-mode {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-    margin: 0 auto; /* Centers the container horizontally */
+    margin: 0 auto; /* Center content horizontally */
 }
 
 body.dark-mode .container {
     background-color: #1e1e1e;
+    color: #ffffff;
 }
 
-/* Header and Navigation */
+/* Section Styling */
+section {
+    margin-bottom: 40px; /* Add spacing between sections */
+}
+
+h1, h2 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+    color: #90ee90;
+}
+
+/* Navigation Styling */
 nav {
-    display: flex; /* Flexbox for aligning links and button */
-    justify-content: center; /* Center all content */
-    align-items: center; /* Vertically align items */
-    gap: 15px; /* Adds spacing between links and the button */
+    text-align: center;
     margin-bottom: 20px;
     padding: 10px 0;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ddd;
+    width: 100%;
     transition: background-color 0.3s;
 }
 
@@ -59,6 +72,7 @@ body.dark-mode nav {
 
 nav a {
     color: #4CAF50;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -80,28 +94,14 @@ button#dark-mode-toggle:hover {
     background-color: #45a049;
 }
 
-/* Section Styling */
-section {
-    margin-bottom: 40px; /* Add spacing between sections */
-}
-
-h1, h2 {
-    color: #4CAF50;
-    text-align: center;
-}
-
-body.dark-mode h1, body.dark-mode h2 {
-    color: #90ee90;
-}
-
 /* Footer Styling */
 footer {
     width: 100%;
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
-    margin-top: 20px;
     background-color: #f9f9f9;
+    margin-top: auto; /* Push footer to the bottom */
     transition: background-color 0.3s, color 0.3s;
 }
 
