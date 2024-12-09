@@ -9,13 +9,13 @@
 body {
     font-family: Arial, sans-serif;
     display: flex; /* Enables Flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Align at the top */
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align content at the top of the page */
     min-height: 100vh; /* Full viewport height */
     background-color: #121212; /* Dark mode default */
     color: #ffffff; /* Default text color */
     transition: background-color 0.3s, color 0.3s;
-    padding: 20px; /* Prevents content from hugging screen edges */
+    padding: 20px; /* Prevents content from hugging the screen edges */
 }
 
 body.light-mode {
@@ -32,7 +32,7 @@ body.light-mode {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-    margin: 0 auto; /* Center content horizontally */
+    margin: 0 auto; /* Center the container horizontally */
 }
 
 body.dark-mode .container {
@@ -40,28 +40,15 @@ body.dark-mode .container {
     color: #ffffff;
 }
 
-/* Section Styling */
-section {
-    margin-bottom: 40px; /* Add spacing between sections */
-}
-
-h1, h2 {
-    color: #4CAF50;
-    text-align: center;
-}
-
-body.dark-mode h1, body.dark-mode h2 {
-    color: #90ee90;
-}
-
 /* Navigation Styling */
 nav {
-    text-align: center;
+    display: flex; /* Make nav a Flexbox */
+    justify-content: space-between; /* Space out links and toggle */
+    align-items: center; /* Align items vertically */
     margin-bottom: 20px;
     padding: 10px 0;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ddd;
-    width: 100%;
     transition: background-color 0.3s;
 }
 
@@ -94,14 +81,28 @@ button#dark-mode-toggle:hover {
     background-color: #45a049;
 }
 
+/* Section Styling */
+section {
+    margin-bottom: 40px; /* Add spacing between sections */
+}
+
+h1, h2 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+    color: #90ee90;
+}
+
 /* Footer Styling */
 footer {
     width: 100%;
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
-    background-color: #f9f9f9;
     margin-top: auto; /* Push footer to the bottom */
+    background-color: #f9f9f9;
     transition: background-color 0.3s, color 0.3s;
 }
 
