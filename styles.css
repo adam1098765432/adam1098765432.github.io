@@ -9,12 +9,13 @@
 body {
     font-family: Arial, sans-serif;
     display: flex; /* Enables Flexbox for centering */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align at the top */
     min-height: 100vh; /* Full viewport height */
     background-color: #121212; /* Dark mode default */
     color: #ffffff; /* Default text color */
     transition: background-color 0.3s, color 0.3s;
+    padding: 20px; /* Prevents content from hugging screen edges */
 }
 
 body.light-mode {
@@ -31,7 +32,7 @@ body.light-mode {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-    margin-bottom: 20px; /* Space above the footer */
+    margin: 0 auto; /* Center content horizontally */
 }
 
 body.dark-mode .container {
