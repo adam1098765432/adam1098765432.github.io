@@ -1,21 +1,25 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    display: flex; /* Enables Flexbox for centering */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Full viewport height */
+    background-color: #121212; /* Dark mode default */
+    color: #ffffff; /* Default text color */
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Light Mode Styles */
 body.light-mode {
     background-color: #f4f4f4;
     color: #333;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
 }
 
 /* Main Content Container */
@@ -25,16 +29,21 @@ body.dark-mode {
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px; /* Space above the footer */
 }
 
 body.dark-mode .container {
     background-color: #1e1e1e;
+    color: #ffffff;
 }
 
-/* Header Styling */
+/* Section Styling */
+section {
+    margin-bottom: 40px; /* Add spacing between sections */
+}
+
 h1, h2 {
     color: #4CAF50;
     text-align: center;
@@ -51,6 +60,7 @@ nav {
     padding: 10px 0;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ddd;
+    width: 100%;
     transition: background-color 0.3s;
 }
 
@@ -85,11 +95,12 @@ button#dark-mode-toggle:hover {
 
 /* Footer Styling */
 footer {
+    width: 100%;
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
-    margin-top: 20px;
     background-color: #f9f9f9;
+    margin-top: auto; /* Push footer to the bottom */
     transition: background-color 0.3s, color 0.3s;
 }
 
