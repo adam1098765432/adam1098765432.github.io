@@ -90,11 +90,11 @@ body.light-mode a:visited {
 
 /* Anchor tag colors for dark mode */
 body.dark-mode a {
-    color: #ADD8E6; /* Light Blue */
+    color: #2466DA; /* Light Blue */
 }
 
 body.dark-mode a:visited {
-    color: #87CEFA; /* Slightly darker light blue for visited links */
+    color: #8224DA;
 }
 
 nav a:hover {
