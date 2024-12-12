@@ -74,18 +74,18 @@ body.light-mode nav a {
 
 /* General anchor tag styling */
 a {
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 /* Anchor tag colors for light mode */
 body.light-mode a {
-    color: #00008B; /* Dark Blue */
+    color: #0000EE; 
 }
 
 body.light-mode a:visited {
-    color: #5A5AAF; /* Slightly lighter dark blue for visited links */
+    color: #551A8B;
 }
 
 /* Anchor tag colors for dark mode */
