@@ -30,43 +30,38 @@ body.light-mode {
     gap: 20px;
     width: 100%;
     padding: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping to new lines */
 }
 
 /* Side Images Styling */
 .side-image {
-    flex: 0 0 auto; /* Prevent shrinking */
-    max-width: 150px; /* Adjust width as needed */
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+    max-width: 150px; /* Adjust the image width */
     text-align: center;
 }
 
 .side-image img {
-    width: 100%; /* Ensure image scales to container width */
-    max-height: 100vh; /* Prevent image from exceeding viewport height */
-    object-fit: cover; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Scale the image to its container */
+    max-height: 100vh; /* Ensure the image does not exceed viewport height */
+    object-fit: cover; /* Maintain the image's aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Main Content Container */
 .container {
-    flex: 1; /* Allow main content to expand */
-    width: 90%;
+    flex: 1; /* Allow the main content to expand */
     max-width: 800px;
-    padding: 20px;
     background-color: #ffffff; /* Light mode background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode .container {
     background-color: #1e1e1e; /* Dark mode background */
     color: #ffffff;
-}
-
-body.light-mode .container {
-    background-color: #ffffff; /* Light mode background */
-    color: #333333;
 }
 
 /* Navigation Styling */
@@ -98,14 +93,14 @@ body.light-mode nav a {
     font-weight: bold;
 }
 
-/* General anchor tag styling */
+/* General Anchor Tag Styling */
 a {
     text-decoration: underline;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-/* Anchor tag colors for light mode */
+/* Anchor Tag Colors for Light Mode */
 body.light-mode a {
     color: #0000EE; /* Default blue */
 }
@@ -114,9 +109,9 @@ body.light-mode a:visited {
     color: #551A8B; /* Default visited purple */
 }
 
-/* Anchor tag colors for dark mode */
+/* Anchor Tag Colors for Dark Mode */
 body.dark-mode a {
-    color: #2466DA; /* Light Blue */
+    color: #2466DA; /* Light blue */
 }
 
 body.dark-mode a:visited {
