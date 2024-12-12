@@ -22,8 +22,34 @@ body.light-mode {
     color: #333333; /* Light mode text */
 }
 
+/* Flex Container for Layout */
+.main-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Side Images Styling */
+.side-image {
+    flex: 0 0 auto; /* Prevent shrinking */
+    max-width: 150px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.side-image img {
+    width: 100%; /* Ensure image scales to container width */
+    max-height: 100vh; /* Prevent image from exceeding viewport height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Main Content Container */
 .container {
+    flex: 1; /* Allow main content to expand */
     width: 90%;
     max-width: 800px;
     padding: 20px;
@@ -81,11 +107,11 @@ a {
 
 /* Anchor tag colors for light mode */
 body.light-mode a {
-    color: #0000EE; 
+    color: #0000EE; /* Default blue */
 }
 
 body.light-mode a:visited {
-    color: #551A8B;
+    color: #551A8B; /* Default visited purple */
 }
 
 /* Anchor tag colors for dark mode */
@@ -94,7 +120,7 @@ body.dark-mode a {
 }
 
 body.dark-mode a:visited {
-    color: #8224DA;
+    color: #8224DA; /* Slightly darker light blue for visited links */
 }
 
 nav a:hover {
@@ -109,6 +135,7 @@ body.dark-mode nav a:hover {
     color: #99CCFF; /* Even lighter blue on hover for better contrast */
 }
 
+/* Dark Mode Toggle Button */
 button#dark-mode-toggle {
     padding: 5px 10px;
     background-color: #4CAF50;
