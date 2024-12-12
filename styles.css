@@ -27,25 +27,24 @@ body.light-mode {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 0; /* No gap between the images and main content */
     width: 100%;
-    padding: 20px;
+    height: 100vh; /* Full viewport height */
     flex-wrap: nowrap; /* Prevent wrapping to new lines */
 }
 
 /* Side Images Styling */
 .side-image {
     flex: 0 0 auto; /* Prevent shrinking or growing */
-    max-width: 150px; /* Adjust the image width */
-    text-align: center;
+    width: 150px; /* Fixed width for side images */
+    height: 100vh; /* Full height to stretch the entire side */
 }
 
 .side-image img {
-    width: 100%; /* Scale the image to its container */
-    max-height: 100vh; /* Ensure the image does not exceed viewport height */
-    object-fit: cover; /* Maintain the image's aspect ratio */
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Stretch image to fit container width */
+    height: 100%; /* Stretch image to fit container height */
+    object-fit: cover; /* Maintain aspect ratio while filling the container */
+    border-radius: 0; /* No rounded corners */
 }
 
 /* Main Content Container */
@@ -55,7 +54,6 @@ body.light-mode {
     background-color: #ffffff; /* Light mode background */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, color 0.3s;
 }
 
