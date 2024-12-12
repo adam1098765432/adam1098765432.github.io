@@ -72,11 +72,21 @@ body.light-mode nav a {
     font-weight: bold;
 }
 
-a {
+body.dark-mode a {
      color: #66B2FF;
 }
 
+body.light-mode a {
+    color: #0000EE; /* Default blue link color */
+}
 
+body.dark-mode a:visited {
+    color: #F5E6F8; /* After the link is visited */
+}
+
+body.light-mode a:visited {
+    color: #E6E6FA;
+}
 
 nav a:hover {
     text-decoration: underline;
