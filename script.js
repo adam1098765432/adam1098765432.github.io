@@ -10,17 +10,26 @@ if (savedTheme === 'light') {
     document.body.classList.add('dark-mode');
 }
 
-// Function to update the project image based on the current theme
+// Function to update the project image with fade effect
 function updateProjectImage() {
-    if (document.body.classList.contains('light-mode')) {
-        // Light mode active
-        projectScreenshot.src = 'whitescreenshot1.png';
-        projectScreenshot.alt = 'Screenshot of project in light mode';
-    } else {
-        // Dark mode active
-        projectScreenshot.src = 'unnamed (1).png';
-        projectScreenshot.alt = 'Screenshot of project in dark mode';
-    }
+    // Add fade-out class
+    projectScreenshot.classList.add('fading');
+
+    // Wait for the fade-out to complete, then update the image and fade back in
+    setTimeout(() => {
+        if (document.body.classList.contains('light-mode')) {
+            // Light mode active
+            projectScreenshot.src = 'whitescreenshot1.png';
+            projectScreenshot.alt = 'Screenshot of project in light mode';
+        } else {
+            // Dark mode active
+            projectScreenshot.src = 'unnamed (1).png';
+            projectScreenshot.alt = 'Screenshot of project in dark mode';
+        }
+
+        // Remove fade-out class to trigger fade-in effect
+        projectScreenshot.classList.remove('fading');
+    }, 500); // Match the duration of the CSS transition
 }
 
 // Call updateProjectImage initially to set the correct image on page load
