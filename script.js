@@ -1,5 +1,6 @@
 // Dark Mode Toggle Script
 const darkModeToggle = document.getElementById('dark-mode-toggle');
+const projectScreenshot = document.getElementById('project-screenshot');
 
 // Initialize theme based on user's preference or default to dark mode
 const savedTheme = localStorage.getItem('theme');
@@ -9,9 +10,7 @@ if (savedTheme === 'light') {
     document.body.classList.add('dark-mode');
 }
 
-
-const projectScreenshot = document.getElementById('project-screenshot');
-
+// Function to update the project image based on the current theme
 function updateProjectImage() {
     if (document.body.classList.contains('light-mode')) {
         // Light mode active
@@ -27,18 +26,19 @@ function updateProjectImage() {
 // Call updateProjectImage initially to set the correct image on page load
 updateProjectImage();
 
-// Add a listener to update the image when the theme changes
-darkModeToggle.addEventListener('click', updateProjectImage);
-
-// Toggle between dark and light mode
+// Toggle between dark and light mode and update the project image
 darkModeToggle.addEventListener('click', () => {
     if (document.body.classList.contains('dark-mode')) {
+        // Switch to light mode
         document.body.classList.remove('dark-mode');
         document.body.classList.add('light-mode');
         localStorage.setItem('theme', 'light');
     } else {
+        // Switch to dark mode
         document.body.classList.remove('light-mode');
         document.body.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
     }
+    // Update the project image after toggling the theme
+    updateProjectImage();
 });
