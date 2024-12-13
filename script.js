@@ -9,6 +9,25 @@ if (savedTheme === 'light') {
     document.body.classList.add('dark-mode');
 }
 
+
+const projectScreenshot = document.getElementById('project-screenshot');
+
+function updateProjectImage() {
+    if (document.body.classList.contains('dark-mode')) {
+        projectScreenshot.src = 'project-dark-mode.jpg';
+        projectScreenshot.alt = 'Screenshot of project in dark mode';
+    } else {
+        projectScreenshot.src = 'project-light-mode.jpg';
+        projectScreenshot.alt = 'Screenshot of project in light mode';
+    }
+}
+
+// Call updateProjectImage initially to set the correct image on page load
+updateProjectImage();
+
+// Add a listener to update the image when the theme changes
+darkModeToggle.addEventListener('click', updateProjectImage);
+
 // Toggle between dark and light mode
 darkModeToggle.addEventListener('click', () => {
     if (document.body.classList.contains('dark-mode')) {
