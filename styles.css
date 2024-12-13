@@ -180,3 +180,20 @@ body.light-mode footer {
     background-color: #f4f4f4;
     color: #333333;
 }
+
+
+.project-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between images */
+}
+
+.project-images img {
+    border: 2px solid #ccc; /* Optional: Add border for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.project-images img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
