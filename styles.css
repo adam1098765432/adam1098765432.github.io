@@ -35,7 +35,7 @@ body.light-mode {
 /* Side Images Styling */
 .side-image {
     flex: 0 0 auto; /* Prevent shrinking or growing */
-    width: 15%; /* Adjust the width proportionally to screen size */
+    width: 20%; /* Slightly increased width for side images */
     height: 100vh; /* Full height to stretch the entire side */
 }
 
@@ -49,6 +49,7 @@ body.light-mode {
 /* Main Content Container */
 .container {
     flex: 1; /* Allow the main content to expand */
+    max-width: 600px; /* Reduced maximum width for a thinner layout */
     background-color: #ffffff; /* Light mode background */
     padding: 20px;
     border-radius: 10px;
