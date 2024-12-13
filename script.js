@@ -13,12 +13,14 @@ if (savedTheme === 'light') {
 const projectScreenshot = document.getElementById('project-screenshot');
 
 function updateProjectImage() {
-    if (document.body.classList.contains('dark-mode')) {
-        projectScreenshot.src = 'unnamed (1).png';
-        projectScreenshot.alt = 'Screenshot of project in dark mode';
-    } else {
-        projectScreenshot.src = 'whitescreenshot1.png';
+    if (document.body.classList.contains('light-mode')) {
+        // Light mode active
+        projectScreenshot.src = 'project-light-mode.jpg';
         projectScreenshot.alt = 'Screenshot of project in light mode';
+    } else {
+        // Dark mode active
+        projectScreenshot.src = 'project-dark-mode.jpg';
+        projectScreenshot.alt = 'Screenshot of project in dark mode';
     }
 }
 
