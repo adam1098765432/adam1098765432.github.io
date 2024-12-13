@@ -9,8 +9,9 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack header, content, and footer vertically */
+    justify-content: space-between; /* Push footer to the bottom */
+    align-items: center;
     min-height: 100vh; /* Full viewport height */
     background-color: #121212; /* Dark mode background */
     color: #ffffff; /* Dark mode text */
@@ -138,13 +139,14 @@ body.dark-mode h1, body.dark-mode h2 {
 
 /* Footer Styling */
 footer {
-    width: 100%;
+    width: 100%; /* Span the entire bottom */
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
-    margin-top: auto;
+    margin-top: auto; /* Push footer to the bottom of the viewport */
     background-color: #f9f9f9; /* Light mode footer */
     transition: background-color 0.3s, color 0.3s;
+    position: relative; /* Ensure it stays above other elements */
 }
 
 body.dark-mode footer {
@@ -165,6 +167,7 @@ body.light-mode footer {
     height: auto; /* Maintain aspect ratio */
     margin: 10px 0; /* Add spacing above and below */
     display: block; /* Ensure it behaves like a block element */
+    transition: opacity 0.5s; /* Smooth fade effect for the image */
 }
 
 .project-images img:hover {
