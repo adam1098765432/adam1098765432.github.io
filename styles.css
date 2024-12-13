@@ -35,22 +35,21 @@ body.light-mode {
 /* Side Images Styling */
 .side-image {
     flex: 0 0 auto; /* Prevent shrinking or growing */
-    width: 15%; /* Fixed width for side images */
+    width: 20%; /* Slightly increased width for side images */
     height: 100vh; /* Full height to stretch the entire side */
 }
 
 .side-image img {
     width: 100%; /* Stretch image to fit container width */
     height: 100%; /* Stretch image to fit container height */
-    object-fit: cover; /* Crop the image to ensure it fully fills the container */
-    object-position: center; /* Center the cropped content */
+    object-fit: cover; /* Maintain aspect ratio while filling the container */
     border-radius: 0; /* No rounded corners */
 }
 
 /* Main Content Container */
 .container {
     flex: 1; /* Allow the main content to expand */
-    max-width: 800px; /* Keep the main content proportional */
+    max-width: 600px; /* Reduced maximum width for a thinner layout */
     background-color: #ffffff; /* Light mode background */
     padding: 20px;
     border-radius: 10px;
