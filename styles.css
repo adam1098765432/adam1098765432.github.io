@@ -165,7 +165,6 @@ body.light-mode footer {
     height: auto; /* Maintain aspect ratio */
     margin: 10px 0; /* Add spacing above and below */
     display: block; /* Ensure it behaves like a block element */
-    transition: opacity 0.5s; /* Smooth fade effect for the image */
 }
 
 .project-images img:hover {
