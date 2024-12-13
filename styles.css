@@ -182,17 +182,14 @@ body.light-mode footer {
 }
 
 
-.project-images {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Space between images */
+.project img {
+    width: 100%; /* Fit within the parent container */
+    max-width: 800px; /* Restrict to a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Add spacing above and below */
+    display: block; /* Ensure it behaves like a block element */
 }
 
-.project-images img {
-    border: 2px solid #ccc; /* Optional: Add border for better visibility */
-    border-radius: 5px; /* Rounded corners */
-    transition: transform 0.3s; /* Smooth scaling on hover */
-}
 
 .project-images img:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
