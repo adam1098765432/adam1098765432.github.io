@@ -17,7 +17,7 @@ function updateProjectImage() {
         projectScreenshot.src = 'unnamed (1).png';
         projectScreenshot.alt = 'Screenshot of project in dark mode';
     } else {
-        projectScreenshot.src = 'unnamed (1)_u2net.png';
+        projectScreenshot.src = 'whitescreenshot1.png';
         projectScreenshot.alt = 'Screenshot of project in light mode';
     }
 }
