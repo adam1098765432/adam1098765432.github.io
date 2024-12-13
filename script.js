@@ -29,7 +29,7 @@ function updateProjectImage() {
 
         // Remove fade-out class to trigger fade-in effect
         projectScreenshot.classList.remove('fading');
-    }, 500); // Match the duration of the CSS transition
+    }, 300); // Match the duration of the CSS transition
 }
 
 // Call updateProjectImage initially to set the correct image on page load
