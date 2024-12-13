@@ -14,10 +14,10 @@ const projectScreenshot = document.getElementById('project-screenshot');
 
 function updateProjectImage() {
     if (document.body.classList.contains('dark-mode')) {
-        projectScreenshot.src = 'project-dark-mode.jpg';
+        projectScreenshot.src = 'unnamed (1).png';
         projectScreenshot.alt = 'Screenshot of project in dark mode';
     } else {
-        projectScreenshot.src = 'project-light-mode.jpg';
+        projectScreenshot.src = 'unnamed (1)_u2net.png';
         projectScreenshot.alt = 'Screenshot of project in light mode';
     }
 }
